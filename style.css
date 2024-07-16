@@ -8,3 +8,14 @@ h1{
   font-family: "Pixelify Sans", sans-serif;
   font-size: 50px;
 }
+
+
+hr{
+  color: #65FF70;
+}
+
+
+p{
+  text-align: center;
+  font-family: "Pixelify Sans", sans-serif;
+}
