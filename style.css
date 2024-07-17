@@ -1,5 +1,7 @@
 body{
   background-color: #52DFFF;
+  text-align: center;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 
@@ -11,10 +13,21 @@ h1{
 
 
 hr{
-  color: #65FF70;
+  background-color: #00D7FF;
+  height: 2px;
+}
+
+div{
+  border-width: 12em;
+  background-color: #00B9FF;
+  border-radius: 10px;
 }
 
 
+.devartists{
+  width: 200px;
+  
+}
 
 p{
   text-align: center;
@@ -31,6 +44,8 @@ button{
   outline: none;
   background: #4F8FFF;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 button:not(.pill--selected):hover {
