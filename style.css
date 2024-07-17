@@ -20,3 +20,36 @@ p{
   text-align: center;
   font-family: "Pixelify Sans", sans-serif;
 }
+
+button{
+  font-size: 12px;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background: #4F8FFF;
+  cursor: pointer;
+}
+
+button:not(.pill--selected):hover {
+  background: #cccccc;
+}
+
+button--selected {
+  background: #009578;
+  color: #ffffff;
+}
+
+button:focus {
+  font-size: 12px;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background: #104BB2;
+  cursor: pointer;
+}
