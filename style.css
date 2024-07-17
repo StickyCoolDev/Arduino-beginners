@@ -24,9 +24,18 @@ div{
 }
 
 
+
 .devartists{
-  width: 200px;
-  
+  width: 190px;
+  margin-right: 10px;
+  Display: Inline-block;
+}
+
+.app{
+  Display: Inline-block;
+  width: 190px;
+  position: relative;
+  bottom: 60px;
 }
 
 p{
