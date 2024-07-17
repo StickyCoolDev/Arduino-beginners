@@ -29,13 +29,18 @@ div{
   width: 190px;
   margin-right: 10px;
   Display: Inline-block;
+  position: relative;
+  right: 100px;
+  bottom: 45px;
 }
 
 .app{
+  
   Display: Inline-block;
   width: 190px;
   position: relative;
-  bottom: 60px;
+  bottom: 5px;
+  right: 100px;
 }
 
 p{
@@ -76,4 +81,9 @@ button:focus {
   outline: none;
   background: #104BB2;
   cursor: pointer;
+}
+
+.ButtonContainer{
+  display: flex;
+ 
 }
