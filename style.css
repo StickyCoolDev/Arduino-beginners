@@ -85,6 +85,7 @@ button:focus {
 
 .ButtonContainer{
   display: flex;
+  gap: 20px;
 }
 
 input{
@@ -103,4 +104,5 @@ input{
 
 .buttoncenter{
   align-self: center;
+  align-content: center;
 }
