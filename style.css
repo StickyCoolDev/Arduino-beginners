@@ -62,14 +62,9 @@ button{
   align-items: center;
 }
 
-button:not(.pill--selected):hover {
-  background: #cccccc;
-}
 
-button--selected {
-  background: #009578;
-  color: #ffffff;
-}
+
+
 
 button:focus {
   font-size: 12px;
@@ -100,9 +95,6 @@ input{
 }
 .helpform{
   text-align: center;
+  display: flex;
 }
 
-.buttoncenter{
-  align-self: center;
-  align-content: center;
-}
