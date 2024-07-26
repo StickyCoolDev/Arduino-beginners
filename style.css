@@ -1,3 +1,6 @@
+
+
+
 body{
   background-color: #52DFFF;
   text-align: center;
@@ -21,6 +24,8 @@ div{
   border-width: 12em;
   background-color: #00B9FF;
   border-radius: 10px;
+  animation-duration: 0.6s;
+  animation-name: roundedege;
 }
 
 
@@ -96,5 +101,15 @@ input{
 .helpform{
   text-align: center;
   display: flex;
+  animation-duration: 2s;
+  animation-name: roundedege;
 }
 
+@keyframes roundedege{
+  0%{
+    border-radius: 0px;
+  }
+  100%{
+    border-radius: 10px;
+  }
+}
