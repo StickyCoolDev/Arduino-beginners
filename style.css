@@ -12,6 +12,7 @@ h1{
   text-align: center;
   font-family: "Pixelify Sans", sans-serif;
   font-size: 50px;
+  position: relative;
 }
 
 
@@ -21,6 +22,7 @@ hr{
 }
 
 div{
+  height: max-content;
   border-width: 12em;
   background-color: #00B9FF;
   border-radius: 10px;
@@ -49,6 +51,7 @@ div{
 }
 
 p{
+  position: relative;
   text-align: center;
   font-family: "Pixelify Sans", sans-serif;
 }
@@ -85,7 +88,7 @@ button:focus {
 
 .ButtonContainer{
   display: flex;
-  gap: 20px;
+  gap: 3px;
 }
 
 input{
@@ -112,4 +115,23 @@ input{
   100%{
     border-radius: 10px;
   }
+}
+
+
+hr{
+  background: linear-gradient(to right ,#00B9FF, #0015FF);
+  border: none;
+  height: 4px;
+}
+
+.picdiv1{
+  
+  place-items: center;
+  display: flex;
+  gap: 2px;
+  height: 150px;
+}
+
+.topitem{
+  bottom: 90%;
 }
