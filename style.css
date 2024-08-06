@@ -88,7 +88,12 @@ button:focus {
 
 .ButtonContainer{
   display: flex;
-  gap: 3px;
+  
+}
+
+.ButtonContainer button{
+  border-radius: 0%;
+  padding: none;
 }
 
 input{
