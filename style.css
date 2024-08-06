@@ -130,13 +130,23 @@ hr{
 }
 
 .picdiv1{
-  
   place-items: center;
   display: flex;
   gap: 2px;
   height: 150px;
+  
+}
+
+.imgc{
+  position: relative;
+  top: 5px;
 }
 
 .topitem{
   bottom: 90%;
+}
+
+.container{
+  background: none;
+  color: none;
 }
