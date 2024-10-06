@@ -1,5 +1,6 @@
 # Arduino beginners
 
-a place to {% blockquote %}
-quote
-{% endblockquote %}
+a place to for beginners to learn `arduino` .
+
+
+
