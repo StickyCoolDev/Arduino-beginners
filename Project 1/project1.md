@@ -9,3 +9,4 @@ in this project you will learn the basics of `arduino`.
 2. using the serial monitor
 
 # Diagram
+{% img class URL width height title_text alt_text %}
