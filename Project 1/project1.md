@@ -9,4 +9,4 @@ in this project you will learn the basics of `arduino`.
 2. using the serial monitor
 
 # Diagram
-{% img class Screenshot_20241006_235226_Chrome.jpg width height title_text alt_text %}
+<img scr="https://github.com/StickyCoolDev/Arduino-beginners/blob/main/Project%201/Screenshot_20241006_235226_Chrome.jpg"></img>
