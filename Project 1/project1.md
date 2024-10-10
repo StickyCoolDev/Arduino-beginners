@@ -29,7 +29,7 @@ this code will to start the serial monitor. it always has to be in the
 print something in the serum monitor use the `Serial.print()` function.
 the code will be something like this.
 
-``` language cool URL link_text
+``` language cool gogle.com link_text
 code_snippet
 ```
 
