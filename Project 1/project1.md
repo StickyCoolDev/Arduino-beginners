@@ -1,6 +1,7 @@
 # Project 1
 
 in this project you will learn the basics of `arduino`.
+simulate the project at [led](https://wokwi.com/projects/411336385024901121)
 
 
 
