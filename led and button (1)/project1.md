@@ -12,6 +12,7 @@ and don't forget to like ❤️
 3. using the serial monitor
 
 # Diagram
+diagram of the .ino project.
 ![Screenshot_20241010_115241_Chrome](https://github.com/user-attachments/assets/6bb95536-b864-4568-97d8-5654944a87fb)
 
 ## more about the code 
@@ -41,4 +42,15 @@ void setup() {
 
 _*NOTE*_: `Serial.print()` will print in the same line and `Serial.printnl()` will print on a new line.
 
+
+
+
+### Pinmode (input and output)
+To turn on a led or check if a button is pressed or not we use inputs and outputs. inputs are LED, screen, buzzer's. And outputs are buttons, switches, etc.
+
+to set a pin as a input/output we use `pimMode()` function.
+```
+pimMode(pin_number, Value) //value can be input or output
+// and pin_number will be the number of the pin that the device is plugged //into
+```
 
