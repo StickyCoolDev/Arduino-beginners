@@ -29,9 +29,6 @@ this code will to start the serial monitor. it always has to be in the
 print something in the serum monitor use the `Serial.print()` function.
 the code will be something like this.
 
-``` language cool gogle.com link_text
-code_snippet
-```
 
 ``` cpp
 void setup() {
@@ -40,6 +37,6 @@ void setup() {
 }
 ```
 
-*note*: `Serial.print()` will print in the same line and `Serial.printnl()` will print on a new line.
+_*NOTE*_: `Serial.print()` will print in the same line and `Serial.printnl()` will print on a new line.
 
 
