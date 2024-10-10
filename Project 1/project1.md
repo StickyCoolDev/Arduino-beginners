@@ -10,7 +10,7 @@ in this project you will learn the basics of `arduino`.
 3. using the serial monitor
 
 # Diagram
-![Cool](https://github.com/user-attachments/assets/75d68535-3958-4a59-a2c8-2dbba87774ae)
+![Screenshot_20241010_115241_Chrome](https://github.com/user-attachments/assets/6bb95536-b864-4568-97d8-5654944a87fb)
 
 ## more about the code 
 
@@ -30,8 +30,8 @@ the code will be something like this.
 
 ```
 void setup() {
-  Serial.begin(9600)
-  Serial.print("cool")
+  Serial.begin(9600);
+  Serial.print("cool");! 
 }
 ```
 
