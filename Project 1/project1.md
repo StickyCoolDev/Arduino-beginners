@@ -1,7 +1,7 @@
-# Project 1
+# Button and led
 
 in this project you will learn the basics of `arduino`.
-simulate the project at [led](https://wokwi.com/projects/411336385024901121)
+simulate the project at [led and button](https://wokwi.com/projects/411336385024901121)
 
 
 
@@ -16,7 +16,7 @@ simulate the project at [led](https://wokwi.com/projects/411336385024901121)
 ## more about the code 
 
 ### serial monitor
-a serial monitor mainly used for debging codem
+a serial monitor mainly used for debging code
 
 
 ```
@@ -26,8 +26,12 @@ this code will to start the serial monitor. it always has to be in the
 `setup()` function. 
 
 
-print something in the serum monitor use the `print()` function.
+print something in the serum monitor use the `Serial.print()` function.
 the code will be something like this.
+
+``` language title URL link_text
+code_snippet
+```
 
 ```
 void setup() {
@@ -35,5 +39,7 @@ void setup() {
   Serial.print("cool");! 
 }
 ```
+
+*note*: `Serial.print()` will print in the same line and `Serial.printnl()` will print on a new line.
 
 
