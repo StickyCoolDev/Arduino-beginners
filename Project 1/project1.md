@@ -20,6 +20,7 @@ and don't forget to like ❤️
 a serial monitor mainly used for debging code
 
 
+
 ```
 Serial.begin(9600)
 ```
