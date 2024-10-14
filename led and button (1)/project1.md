@@ -41,8 +41,10 @@ void setup() {
 ```
 
 _*NOTE*_: `Serial.print()` will print in the same line and `Serial.printnl()` will print on a new line.
+![3D Model of Aula 31 - Controle de Motores DC - Kit 2021](https://path/to/your/screenshot.png)
 
-<div class="sketchfab-embed-wrapper"> <iframe title="Aula 31 - Controle de Motores DC - Kit 2021" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c79f5fcf8a0043b5baf2d75750349b5f/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/aula-31-controle-de-motores-dc-kit-2021-c79f5fcf8a0043b5baf2d75750349b5f?utm_medium=embed&utm_campaign=share-popup&utm_content=c79f5fcf8a0043b5baf2d75750349b5f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Aula 31 - Controle de Motores DC - Kit 2021 </a> by <a href="https://sketchfab.com/roboticaparana?utm_medium=embed&utm_campaign=share-popup&utm_content=c79f5fcf8a0043b5baf2d75750349b5f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Robótica Paraná </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c79f5fcf8a0043b5baf2d75750349b5f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+This is a 3D model of Aula 31 - Controle de Motores DC - Kit 2021. You can view the full model on Sketchfab: [Link to your Sketchfab model](https://sketchfab.com/models/c79f5fcf8a0043b5baf2d75750349b5f/embed).
+
 
 
 ### Pinmode (input and output)
