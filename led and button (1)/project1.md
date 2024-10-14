@@ -42,7 +42,7 @@ void setup() {
 
 _*NOTE*_: `Serial.print()` will print in the same line and `Serial.printnl()` will print on a new line.
 
-
+<model-viewer src="https://sketchfab.com/models/3d72497508964830835674992b3733a9/embed" alt="3D Model from Sketchfab"></model-viewer>
 
 
 ### Pinmode (input and output)
