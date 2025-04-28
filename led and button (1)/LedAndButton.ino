@@ -1,9 +1,8 @@
 int button = 3;
 
+int LED1 = 10; // use the pin number that your led is pluged into
 
-int LED1 = 10;
-// use the pin number that your led is pluged into
-
+// the setup function is ran once when the arduino starts (gets power)
 void setup()
 {
   Serial.begin(9600);
@@ -12,6 +11,7 @@ void setup()
 
 }
 
+// the loop function is ran over and over again untill the arduino is turn off
 void loop()
 {
   int Button1Pressed = digitalRead(button);

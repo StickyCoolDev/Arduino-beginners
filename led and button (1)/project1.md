@@ -39,3 +39,8 @@ void setup()
   Serial.begin(9600);
 }
 ```
+
+now let's print something . to print something in the serial monitor we need to use the function:
+```cpp
+Serial.print("Super Cool");
+```
