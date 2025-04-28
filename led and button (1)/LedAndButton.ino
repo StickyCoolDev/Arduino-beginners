@@ -1,13 +1,12 @@
 int button = 3;
 
-//add many LEDs as you like
 
 int LED1 = 10;
-// int LED2 = 11
+// use the pin number that your led is pluged into
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(button, INPUT_PULLUP); // set the button as input
   pinMode(LED1, OUTPUT); // and set the LED as output
 
