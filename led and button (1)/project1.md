@@ -45,11 +45,11 @@ _*NOTE*_: `Serial.print()` will print in the same line and `Serial.printnl()` wi
 
 
 ### Pinmode (input and output)
-To turn on a led or check if a button is pressed or not we use inputs and outputs. inputs are LED, screen, buzzer's. And outputs are buttons, switches, etc.
+To turn on a led or check if a button is pressed or not we use inputs and outputs. ***Outputs*** are LED, screen, buzzer's. And ***Inputs*** are buttons, switches, etc
 
 to set a pin as a input/output we use `pinMode()` function.
 ```cpp
 pimMode(pin_number, Value) //value can be Input or Output
-// and pin_number will be the number of the pin that the device is plugged //into
+// and pin_number will be the number of the pin that the input/output is plugged into
 ```
 
