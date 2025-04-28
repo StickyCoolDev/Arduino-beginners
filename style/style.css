@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern sans-serif */
+  line-height: 1.7; /* Slightly increased line height for better readability */
+  margin: 30px; /* Increased margin for more whitespace */
+  background-color: #f8f9fa; /* Lighter background for better contrast */
+  color: #495057; /* Slightly softer text color */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering for webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improve font rendering for Firefox on macOS */
+}
+
+h1,
+h2,
+h3 {
+  color: #343a40; /* Darker heading color */
+  line-height: 1.3; /* Adjust heading line height */
+  margin-top: 25px; /* Add top margin for better spacing */
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5em; /* Slightly larger main heading */
+  border-bottom: 3px solid #007bff; /* More vibrant and thicker border */
+  padding-bottom: 15px; /* Increased padding below the border */
+  margin-bottom: 30px; /* Increased bottom margin */
+  font-weight: bold; /* Make the main heading bold */
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+p {
+  margin-bottom: 20px; /* Increased paragraph spacing */
+}
+
+code {
+  background-color: #e9ecef; /* Lighter code background */
+  color: #222; /* Darker code text */
+  padding: 0.3em 0.6em; /* Adjust padding */
+  border-radius: 5px; /* Slightly more rounded corners */
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* More modern monospace font stack */
+  font-size: 0.9em; /* Slightly smaller code font size */
+}
+
+ol,
+ul {
+  padding-left: 25px; /* Consistent list indentation */
+  margin-bottom: 15px;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 12px; /* Adjust list item spacing */
+}
+
+a {
+  color: #007bff; /* More vibrant link color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+a:hover {
+  color: #0056b3; /* Darker link color on hover */
+  text-decoration: underline;
+}
+
+/* Add some subtle visual enhancements */
+hr {
+  border: 0;
+  border-top: 1px solid #dee2e6;
+  margin: 2rem 0;
+}
+
+blockquote {
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  border-left: 0.25rem solid #6c757d;
+  color: #6c757d;
+  font-style: italic;
+}
