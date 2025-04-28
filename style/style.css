@@ -11,7 +11,7 @@ body {
 h1,
 h2,
 h3 {
-  text-wrap: center;
+  text-align: center;
   color: #343a40; /* Darker heading color */
   line-height: 1.3; /* Adjust heading line height */
   margin-top: 25px; /* Add top margin for better spacing */
