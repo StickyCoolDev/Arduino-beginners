@@ -18,41 +18,38 @@ diagram of the .ino project.
 ## more about the code 
 
 ### serial monitor
-a serial monitor mainly used for debging code
+a serial monitor mainly used for debging code and printing text
 
 
 
 ```
 Serial.begin(9600)
 ```
-this code will to start the serial monitor. it always has to be in the
+this code will to start the serial monitor. it has to be in the
 `setup()` function. 
 
 
-print something in the serum monitor use the `Serial.print()` function.
-the code will be something like this.
-
+To print something in the serial monitor use the `Serial.print()` function.
+the code will be something like this:
 
 ``` cpp
 void setup() {
   Serial.begin(9600);
-  Serial.print("cool");! 
+  Serial.print("cool");
 }
 ```
 
 _*NOTE*_: `Serial.print()` will print in the same line and `Serial.printnl()` will print on a new line.
-![3D Model of Aula 31 - Controle de Motores DC - Kit 2021](https://path/to/your/screenshot.png)
 
-This is a 3D model of Aula 31 - Controle de Motores DC - Kit 2021. You can view the full model on Sketchfab: [Link to your Sketchfab model](https://sketchfab.com/models/c79f5fcf8a0043b5baf2d75750349b5f/embed).
 
 
 
 ### Pinmode (input and output)
 To turn on a led or check if a button is pressed or not we use inputs and outputs. inputs are LED, screen, buzzer's. And outputs are buttons, switches, etc.
 
-to set a pin as a input/output we use `pimMode()` function.
+to set a pin as a input/output we use `pinMode()` function.
 ```cpp
-pimMode(pin_number, Value) //value can be input or output
+pimMode(pin_number, Value) //value can be Input or Output
 // and pin_number will be the number of the pin that the device is plugged //into
 ```
 
