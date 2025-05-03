@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Led and Buttons</title>
+    <title>Button and LED Basics with Arduino</title>
 </head>
 <body>
-    
+    <h1>Button and LED Basics with Arduino</h1>
+    <p>This project introduces the fundamental concepts of Arduino.</p>
+    <p>You can simulate this project online using Wokwi: <a href="https://wokwi.com/projects/411336385024901121">Button and LED Simulation</a></p>
+    <p>If you find this helpful, please consider giving it a like ❤️!</p>
+
+    <h2>What You Will Learn</h2>
+    <p>This project will guide you through the following essential Arduino concepts:</p>
+    <ol>
+        <li><strong>Declaring Variables:</strong> Learn how to create and use variables in your Arduino sketches.</li>
+        <li><strong>Reading Digital Input:</strong> Understand how to read the state of a digital input pin connected to a button.</li>
+        <li><strong>Writing Digital Output:</strong> Learn how to control a digital output pin connected to an LED.</li>
+        <li><strong>Using the Serial Monitor:</strong> Discover how to use the Serial Monitor for debugging and displaying information.</li>
+    </ol>
+
+    <h2>Project Diagram</h2>
+    <p>Circuit setup:</p>
+    <img src="https://github.com/user-attachments/assets/6bb95536-b864-4568-97d8-5654944a87fb" alt="Button and LED Diagram">
+
+    <h2>Code</h2>
+    <p>Let's dive deeper into the code elements:</p>
+
+    <h3>Serial Monitor</h3>
+    <p>The Serial Monitor is an tool for debugging your Arduino code and displaying text information from your board to your computer.</p>
+    <pre><code>Serial.begin(9600);</code></pre>
+    <p>by using the code given, we can set up serial communication. it's recommended to run it inside of the <code>setup</code> function as it's only need to be run once:</p>
+    <pre><code>void setup()
+{
+  Serial.begin(9600);
+}</code></pre>
+    <p>now let's print something . to print something in the serial monitor we need to use the function:</p>
+    <pre><code>Serial.print("Super Cool");</code></pre>
 </body>
 </html>
