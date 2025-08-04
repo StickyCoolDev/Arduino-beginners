@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button and LED Basics with Arduino</title>
+    <title>Button and LED Basics | Arduino-beginners</title>
     <link rel="stylesheet" href="/style/style.css">
-    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-coy.min.css" rel="stylesheet" />
-    
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,7 +19,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        
+
         h1,
         h2,
         h3 {
@@ -29,7 +29,7 @@
             margin-top: 25px;
             margin-bottom: 15px;
         }
-        
+
         h1 {
             font-size: 2.5em;
             border-bottom: 3px solid #007bff;
@@ -37,20 +37,19 @@
             margin-bottom: 30px;
             font-weight: bold;
         }
-        
+
         h2 {
             font-size: 2em;
         }
-        
+
         h3 {
             font-size: 1.75em;
         }
-        
+
         p {
             margin-bottom: 20px;
         }
-        
-        /* Styling for inline code, separate from Prism's block code */
+
         code {
             background-color: #e9ecef;
             color: #222;
@@ -59,42 +58,42 @@
             font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
             font-size: 0.9em;
         }
-        
+
         ol,
         ul {
             padding-left: 25px;
             margin-bottom: 15px;
         }
-        
+
         ol {
             list-style-type: decimal;
         }
-        
+
         ul {
             list-style-type: disc;
         }
-        
+
         li {
             margin-bottom: 12px;
         }
-        
+
         a {
             color: #007bff;
             text-decoration: none;
             transition: color 0.3s ease-in-out;
         }
-        
+
         a:hover {
             color: #0056b3;
             text-decoration: underline;
         }
-        
+
         hr {
             border: 0;
             border-top: 1px solid #dee2e6;
             margin: 2rem 0;
         }
-        
+
         blockquote {
             min-width: 100%;
             padding: 0.5rem 1rem;
@@ -103,17 +102,41 @@
             color: #6c757d;
             font-style: italic;
         }
-        
-        /* New rule for the image */
+
         .project-diagram {
             max-width: 100%;
             height: auto;
         }
-        
-        /* Prism.js container overrides */
+
         .project-code pre[class*="language-"] {
             margin: 1.5rem 0;
-            /* Add margin to the top and bottom of code blocks */
+        }
+
+        pre {
+            position: relative;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-family: inherit;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .copy-button:hover {
+            background-color: #007bff;
+        }
+
+        .copy-button:active {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -121,11 +144,11 @@
 <body>
     <h1>Button and LED Basics with Arduino</h1>
     <p>This project introduces fundamental concepts of Arduino programming by demonstrating how to control an LED with a pushbutton.</p>
-    
+
     <p>You can simulate this project online using Wokwi: <a href="https://wokwi.com/projects/411336385024901121">Button and LED Simulation</a></p>
-    
+
     <hr>
-    
+
     <h2>What You'll Learn</h2>
     <p>This project will guide you through the following essential Arduino concepts:</p>
     <ol>
@@ -134,18 +157,19 @@
         <li><strong>Writing Digital Output:</strong> Learn how to control a digital output pin connected to an LED.</li>
         <li><strong>Using the Serial Monitor:</strong> Discover how to use the Serial Monitor for debugging and displaying information.</li>
     </ol>
-    
+
     <hr>
-    
+
     <h2>Project Diagram</h2>
     <p>Here is the circuit setup for this project.</p>
-    <img class="project-diagram" src="https://github.com/user-attachments/assets/6bb95536-b864-4568-97d8-5654944a87fb" alt="Button and LED Diagram">
-    
+    <img class="project-diagram" src="https://github.com/user-attachments/assets/6bb95536-b864-4568-97d8-5654944a87fb"
+        alt="Button and LED Diagram">
+
     <hr>
-    
+
     <h2>Code Breakdown</h2>
     <p>Let's dive deeper into the code elements, explaining each part of the program.</p>
-    
+
     <h3>Declaring Variables</h3>
     <p>We start by declaring variables to represent our components. This makes our code easier to read and modify.</p>
     <pre><code class="language-clike">int button = 3;
@@ -154,7 +178,7 @@ int LED1 = 10;</code></pre>
         <li><code>int button = 3;</code>: We create an integer variable named <code>button</code> and assign it the value <code>3</code>, which corresponds to digital pin 3 on the Arduino.</li>
         <li><code>int LED1 = 10;</code>: We create an integer variable named <code>LED1</code> and assign it the value <code>10</code>, which corresponds to digital pin 10.</li>
     </ul>
-    
+
     <h3>The <code>setup()</code> Function</h3>
     <p>The <code>setup()</code> function runs just once when the Arduino board is powered on or reset. We use it to initialize our pins and serial communication.</p>
     <pre><code class="language-clike">void setup()
@@ -168,7 +192,7 @@ int LED1 = 10;</code></pre>
         <li><code>pinMode(button, INPUT_PULLUP);</code>: The <code>pinMode()</code> function configures a specified pin to behave as an input or an output. Here, we set the <code>button</code> pin to <code>INPUT_PULLUP</code>. This is a convenient way to read a button's state without needing an external <strong>pull-up resistor</strong>.</li>
         <li><code>pinMode(LED1, OUTPUT);</code>: We set the <code>LED1</code> pin as an <code>OUTPUT</code> so that we can send a voltage to it to turn the LED on or off.</li>
     </ul>
-    
+
     <h3>The <code>loop()</code> Function</h3>
     <p>The <code>loop()</code> function runs continuously after the <code>setup()</code> function has finished. This is where the main logic of our program resides.</p>
     <pre><code class="language-clike">void loop()
@@ -193,9 +217,9 @@ int LED1 = 10;</code></pre>
         <li><code>else</code>: If the <code>if</code> condition is false (the button is not pressed), the code inside this <code>else</code> block will run instead.</li>
         <li><code>digitalWrite(LED1, LOW);</code>: If the button is not pressed, we write <code>LOW</code> to the <code>LED1</code> pin, which turns the LED off.</li>
     </ul>
-    
+
     <hr>
-    
+
     <h3>Full Code</h3>
     <p>Here's the complete code, ready to upload to your Arduino board.</p>
     <pre><code class="language-clike">
@@ -224,10 +248,48 @@ void loop()
   }
 }
 </code></pre>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-clike.min.js"></script>
-    
+
+    <script>
+        const codeBlocks = document.querySelectorAll('pre');
+
+        codeBlocks.forEach(codeBlock => {
+            const copyButton = document.createElement('button');
+            copyButton.className = 'copy-button';
+            copyButton.textContent = 'Copy';
+
+            codeBlock.appendChild(copyButton);
+
+            copyButton.addEventListener('click', () => {
+                const codeToCopy = codeBlock.querySelector('code').textContent;
+
+                navigator.clipboard.writeText(codeToCopy).then(() => {
+                    copyButton.textContent = 'Copied!';
+                    setTimeout(() => {
+                        copyButton.textContent = 'Copy';
+                    }, 2000);
+                }).catch(err => {
+                    fallbackCopyTextToClipboard(codeToCopy);
+                });
+            });
+        });
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+            } catch (err) {
+            }
+            document.body.removeChild(textArea);
+        }
+    </script>
 </body>
 
 </html>
+
